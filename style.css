@@ -31,7 +31,8 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 25px 35px;
   position: absolute;
   top: 50%;
@@ -115,4 +116,46 @@ body {
 
 #download {
   background: #2196f3; /* Blue */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 15px 20px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 48%;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  #imgbox {
+    width: 65%;
+  }
+
+  #imgbox img {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .container {
+    top: 55%;
+    padding-top: 60px;
+  }
+
+  #nav {
+    padding: 10px 15px;
+  }
+
+  #nav h1 {
+    font-size: 1.2rem;
+  }
 }

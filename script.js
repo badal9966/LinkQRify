@@ -14,6 +14,7 @@ document.getElementById("generate").addEventListener("click", () => {
     qrimg.src = url;
     imgbox.classList.add("show-img");
     imgbox.style.display = "block";
+    qrtext.blur();
 });
 
 // Share QR Code (as Image)
