@@ -10,15 +10,20 @@
     <nav id="nav">
       <h1>LinkQRify</h1>
     </nav>
+    
     <div class="container">
       <p>QRify your links</p>
-      <input type="text" class="" placeholder="Text or URL" id="qrtext" />
+      <input type="text" placeholder="Text or URL" id="qrtext" />
       <div id="imgbox">
-        <img src="" alt="" id="qrimg" />
+        <img src="" alt="QR Code" id="qrimg" />
+        <div class="button-container">
+          <button class="btn" id="share">Share QR</button>
+          <button class="btn" id="download">Download QR</button>
+        </div>
       </div>
-      <button class="btn">Generate QRCode</button>
-
-      <script src="script.js"></script>
+      <button class="btn" id="generate">Generate QR Code</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
